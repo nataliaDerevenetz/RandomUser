@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">RandomuserApp</string>
+    <string name="create_user">Generate user</string>
+    <string name="select_gender">Select gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="generate">GENERATE</string>
+    <string name="select_nationality">Select nationality</string>
+    <string name="error_create_user">Error create user</string>
+    <string name="delete">Delete</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="gender">Gender</string>
+    <string name="dob">Date of birth</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="country">Country</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="street">Street</string>
+    <string name="users">USERS</string>
+</resources>
