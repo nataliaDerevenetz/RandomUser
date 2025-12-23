@@ -49,7 +49,7 @@ import com.example.randomuserapp.presentation.components.NetworkImage
 @Composable
 fun ListingScreen(
     viewModel: RandomUserViewModel,
-    onNavigateToBack: () -> Boolean,
+    onNavigateToBack: () -> Unit,
     onNavigateToDetailUser: (String) -> Unit
 ) {
 

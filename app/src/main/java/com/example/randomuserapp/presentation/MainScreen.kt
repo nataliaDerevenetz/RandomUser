@@ -2,6 +2,7 @@ package com.example.randomuserapp.presentation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.lifecycle.Lifecycle
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -23,7 +24,9 @@ fun MainScreen(modifier: Modifier = Modifier,viewModel: RandomUserViewModel) {
 
     val navController = rememberNavController()
     val onNavigateToListing = { navController.navigate(Listing) }
-    val onNavigateToBack = { navController.popBackStack()}
+    val onNavigateToBack = {
+        if(navController.currentBackStackEntry?.lifecycle?.currentState == Lifecycle.State.RESUMED) navController.popBackStack()
+    }
     val onNavigateToDetailUser = {it: String ->  navController.navigate(DetailUser(it)) }
 
     NavHost(navController = navController, startDestination = CreateUser, modifier) {

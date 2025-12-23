@@ -93,7 +93,7 @@ val tabItems = listOf(
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun DetailUserScreen(viewModel: RandomUserViewModel, id: String, onNavigateToBack: () -> Boolean) {
+fun DetailUserScreen(viewModel: RandomUserViewModel, id: String, onNavigateToBack: () -> Unit) {
 
     val user by viewModel.getUserById(id).collectAsState(null)
 
